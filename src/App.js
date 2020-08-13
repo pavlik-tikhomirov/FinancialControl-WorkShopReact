@@ -5,62 +5,62 @@ function App() {
     <React.Fragment>
 
       <header>
-        <h1>Кошелёек</h1>
+        <h1>Кошелёк</h1>
         <h2>Калькулятор расходов</h2>
       </header>
 
       <main>
-        <div ClassName="container">
+        <div className="container">
 
-          <section ClassName="total">
-            <header ClassName="total__header">
+          <section className="total">
+            <header className="total__header">
               <h3>Баланс</h3>
-              <p ClassName="total__balance">0 ₽</p>
+              <p className="total__balance">0 ₽</p>
             </header>
 
-            <div ClassName="total__main">
-              <div ClassName="total__main-item total__income">
+            <div className="total__main">
+              <div className="total__main-item total__income">
                 <h4>Доходы</h4>
-                <p ClassName="total__money total__money-income">
+                <p className="total__money total__money-income">
                   +0 ₽
                 </p>
               </div>
-              <div ClassName="total__main-item total__expenses">
+              <div className="total__main-item total__expenses">
                 <h4>Расходы</h4>
-                <p ClassName="total__money total__money-expenses">
+                <p className="total__money total__money-expenses">
                   -0 ₽
                 </p>
               </div>
             </div>
           </section>
 
-          <section ClassName="history">
+          <section className="history">
             <h3>История расходов</h3>
-            <ul ClassName="history__list">
-              <li ClassName="history__item history__item-plus">Получил зарплату
-                        <span ClassName="history__money">+30000 ₽</span>
-                <button ClassName="history__delete">x</button>
+            <ul className="history__list">
+              <li className="history__item history__item-plus">Получил зарплату
+                        <span className="history__money">+30000 ₽</span>
+                <button className="history__delete">x</button>
               </li>
-              <li ClassName="history__item  history__item-minus">Отдал долг
-                        <span ClassName="history__money">-10000 ₽</span>
-                <button ClassName="history__delete">x</button>
+              <li className="history__item  history__item-minus">Отдал долг
+                        <span className="history__money">-10000 ₽</span>
+                <button className="history__delete">x</button>
               </li>
             </ul>
           </section>
 
-          <section ClassName="operation">
+          <section className="operation">
             <h3>Новая операция</h3>
             <form id="form">
               <label>
-                <input type="text" ClassName="operation__fields operation__name" placeholder="Наименование операции"></input>
+                <input type="text" className="operation__fields operation__name" placeholder="Наименование операции"></input>
               </label>
               <label>
-                <input type="number" ClassName="operation__fields operation__amount" placeholder="Введите сумму"></input>
+                <input type="number" className="operation__fields operation__amount" placeholder="Введите сумму"></input>
               </label>
                   
-              <div ClassName="operation__btns">
-                <button type="submit" ClassName="operation__btn operation__btn-subtract">РАСХОД</button>
-                <button type="submit" ClassName="operation__btn operation__btn-add">ДОХОД</button>
+              <div className="operation__btns">
+                <button type="submit" className="operation__btn operation__btn-subtract">РАСХОД</button>
+                <button type="submit" className="operation__btn operation__btn-add">ДОХОД</button>
               </div>
             </form>
           </section>
